@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql:3306
--- Generation Time: Apr 21, 2023 at 04:32 AM
+-- Generation Time: Apr 25, 2023 at 06:09 AM
 -- Server version: 5.7.42
 -- PHP Version: 8.1.17
 
@@ -20,6 +20,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `testdb`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `people`
+--
+
+CREATE TABLE `people` (
+  `Name` varchar(50) NOT NULL,
+  `Age` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `people`
+--
+
+INSERT INTO `people` (`Name`, `Age`) VALUES
+('Titan', 18),
+('John', 6),
+('Alex', 40);
 
 -- --------------------------------------------------------
 

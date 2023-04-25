@@ -17,6 +17,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     // 登入成功
     $_SESSION['user_id'] = $result->fetch_assoc()['user_id'];
     header('Location: home.php');
+    exit;
     } 
   
 }
